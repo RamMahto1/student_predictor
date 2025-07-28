@@ -1,0 +1,11 @@
+2025-07-28 04:09:21,633 INFO read data as data frame
+2025-07-28 04:09:21,644 INFO Dataset Head:
+   gender race_ethnicity parental_level_of_education  ... math_score reading_score  writing_score
+0  female        group B           bachelor's degree  ...         72            72             74
+1  female        group C                some college  ...         69            90             88
+2  female        group B             master's degree  ...         90            95             93
+3    male        group A          associate's degree  ...         47            57             44
+4    male        group C                some college  ...         76            78             75
+
+[5 rows x 8 columns]
+2025-07-28 04:09:21,656 INFO Data Ingestion has completed
