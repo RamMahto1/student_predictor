@@ -1,0 +1,78 @@
+2025-07-28 05:02:20,040 INFO read data as data frame
+2025-07-28 05:02:20,051 INFO Dataset Head:
+   gender race_ethnicity parental_level_of_education  ... math_score reading_score  writing_score
+0  female        group B           bachelor's degree  ...         72            72             74
+1  female        group C                some college  ...         69            90             88
+2  female        group B             master's degree  ...         90            95             93
+3    male        group A          associate's degree  ...         47            57             44
+4    male        group C                some college  ...         76            78             75
+
+[5 rows x 8 columns]
+2025-07-28 05:02:20,063 INFO Data Ingestion has completed
+2025-07-28 05:02:20,088 INFO train data shape: 
+(800, 8)
+2025-07-28 05:02:20,088 INFO test data shape:
+(200, 8)
+2025-07-28 05:02:20,094 INFO train data information:
+None
+2025-07-28 05:02:20,103 INFO test data information:
+None
+2025-07-28 05:02:20,116 INFO train data missing value:
+     gender  race_ethnicity  parental_level_of_education  ...  math_score  reading_score  writing_score
+0     False           False                        False  ...       False          False          False
+1     False           False                        False  ...       False          False          False
+2     False           False                        False  ...       False          False          False
+3     False           False                        False  ...       False          False          False
+4     False           False                        False  ...       False          False          False
+..      ...             ...                          ...  ...         ...            ...            ...
+795   False           False                        False  ...       False          False          False
+796   False           False                        False  ...       False          False          False
+797   False           False                        False  ...       False          False          False
+798   False           False                        False  ...       False          False          False
+799   False           False                        False  ...       False          False          False
+
+[800 rows x 8 columns]
+2025-07-28 05:02:20,126 INFO test data missing value:
+     gender  race_ethnicity  parental_level_of_education  ...  math_score  reading_score  writing_score
+0     False           False                        False  ...       False          False          False
+1     False           False                        False  ...       False          False          False
+2     False           False                        False  ...       False          False          False
+3     False           False                        False  ...       False          False          False
+4     False           False                        False  ...       False          False          False
+..      ...             ...                          ...  ...         ...            ...            ...
+195   False           False                        False  ...       False          False          False
+196   False           False                        False  ...       False          False          False
+197   False           False                        False  ...       False          False          False
+198   False           False                        False  ...       False          False          False
+199   False           False                        False  ...       False          False          False
+
+[200 rows x 8 columns]
+2025-07-28 05:02:20,128 INFO train data duplicate value:
+0
+2025-07-28 05:02:20,130 INFO test data duplicate value:
+0
+2025-07-28 05:02:20,144 INFO train data statatics info:
+       math_score  reading_score  writing_score
+count  800.000000     800.000000     800.000000
+mean    66.496250      69.555000      68.456250
+std     15.024302      14.461532      15.085342
+min      8.000000      24.000000      15.000000
+25%     57.000000      60.000000      58.000000
+50%     66.000000      70.000000      69.000000
+75%     77.000000      80.000000      79.000000
+max    100.000000     100.000000     100.000000
+2025-07-28 05:02:20,155 INFO test data statatics info:
+       math_score  reading_score  writing_score
+count  200.000000       200.0000     200.000000
+mean    64.460000        67.6250      66.445000
+std     15.638453        15.0805      15.563679
+min      0.000000        17.0000      10.000000
+25%     55.000000        57.0000      56.000000
+50%     66.000000        70.0000      69.000000
+75%     76.000000        78.0000      77.000000
+max    100.000000        99.0000     100.000000
+2025-07-28 05:02:20,159 INFO read data as data frame
+2025-07-28 05:02:20,159 INFO obtaining preprocessor obj
+2025-07-28 05:02:20,159 INFO numerical feature:['reading_score', 'writing_score']
+2025-07-28 05:02:20,159 INFO categorical feature:['gender', 'parental_level_of_education', 'race_ethnicity', 'test_preparation_course', 'lunch']
+2025-07-28 05:02:20,162 INFO applying preprocessor obj on training and testing data
